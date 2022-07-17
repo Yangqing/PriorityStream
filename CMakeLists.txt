@@ -13,3 +13,5 @@ target_link_libraries(priority_stream PUBLIC CUDA::cudart CUDA::cublas glog)
 
 add_executable(main main.cc)
 target_link_libraries(main priority_stream)
+
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
