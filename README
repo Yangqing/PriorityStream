@@ -1,0 +1,5 @@
+do:
+
+mkdir build && cd build
+cmake .. & make
+GLOG_logtostderr=1 ./main
